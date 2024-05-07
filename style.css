@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-family: Museo Sans Cyrl;
+}
+.container {
+  margin: 0% auto;
+  max-width: 499px;
+}
+
+/* можно переиспользовать */
+
+.academy-content__title h1,
+.academy__statistics-title h1,
+.director-content__description h1 {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.academy-content__title img,
+.academy__statistics-title img {
+  width: 26px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.about__academy-content,
+.academy__license-content,
+.academy__statistics-content,
+.academy__director-content {
+  padding: 0px 30px 0px 30px;
+}
+.academy-content__items ul,
+.academy-content__breadcrumb ul {
+  padding: 0;
+  margin: 0;
+}
+.academy-content__item li,
+.breadcrumb__items li {
+  list-style-type: none;
+}
+.academy-content__img img,
+.license-content__item-licen,
+.director-content__img {
+  width: 100%;
+}
+.license-content__text p,
+.description__mission h4,
+.item-download__text-download a,
+.description__values h4,
+.description__values li,
+.statistics__title,
+.director-content__text,
+.academy-content__nav {
+  color: #1f2533;
+}
+.description__values ul,
+.director-content__description ul {
+  padding-left: 25px;
+}
+.description__mission h4,
+.description__values h4 {
+  margin: 40px 0 10px 0;
+}
+
+/*  */
+
+.about__academy {
+  background-image: url(/img/about-academy/background\ img.png);
+  padding: 30px 0 30px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul.breadcrumb__items li {
+  display: inline;
+}
+ul.breadcrumb__items li + li:before {
+  padding: 4px;
+  color: black;
+  content: '/\00a0';
+}
+ul.breadcrumb__items li a {
+  color: black;
+  text-decoration: none;
+}
+ul.breadcrumb__items li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+ul.breadcrumb__items li a:active {
+  color: #0275d8;
+}
+ul.breadcrumb__items li a:focus {
+  color: #0275d8;
+}
+.academy-content__img {
+  margin-top: 20px;
+}
+
+.academy-content__item li {
+  padding: 10px 0px 10px 0px;
+}
+.academy__license {
+  margin: 20px 0 20px 0;
+}
+.license-content__item-download {
+  height: 50px;
+  width: 264px;
+}
+.item-download__text-download a {
+  font-size: 18px;
+}
+.item-download__text-size {
+  color: #999999;
+}
+.license-content__item-download img {
+  margin-right: 10px;
+}
+.license-content__item-download {
+  display: flex;
+  align-items: center;
+}
+
+.director-content__competence li {
+  font-weight: 600;
+}
+
+.description__mission p {
+  margin-top: 0;
+}
+
+.description__values li {
+  padding: 6px 0 6px 0;
+}
+.academy__statistics__items {
+  scrollbar-color: #fd3c76 #ffff;
+  scrollbar-width: thin;
+}
+.academy__statistics-content {
+  margin-top: 80px;
+}
+.academy__statistics__items {
+  padding: 50px;
+  display: flex;
+  gap: 30px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  height: 100%;
+}
+.statistics-slider__item {
+  box-shadow: 0px 4px 78px 0px #1b1a181a;
+  border: 10px;
+  padding: 30px;
+  /* scroll-snap-align: start; */
+  flex: none;
+  height: 200px;
+  width: 300px;
+}
+.statistics__number {
+  font-size: 40px;
+  color: #fd3c76;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+.statistics__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.academy__director-content {
+  margin: 50px 0 50px 0;
+}
+.director-content__description img {
+  width: 26px;
+  height: 70px;
+  margin-left: 20px;
+}
+.director-content__text {
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #f3f6ff;
+}
+.director-content__description ul {
+  color: #fd3c76;
+}
+
+@media (min-width: 769px) {
+  .container {
+    max-width: 1200px;
+  }
+  .academy-content__items,
+  .academy__license-content,
+  .academy__director-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .academy__director-content {
+    align-items: start;
+  }
+  .director-content__text {
+    max-width: 803px;
+  }
+  .academy-content__title h1,
+  .academy__statistics-title h1,
+  .director-content__description h1 {
+    font-size: 50px;
+  }
+  .academy-content__nav,
+  .description__text p,
+  .statistics__title,
+  .director-content__text {
+    font-size: 18px;
+  }
+  .description__mission h4,
+  .description__mission p,
+  .description__values h4,
+  .description__values p,
+  .director-content__competence li {
+    font-size: 20px;
+  }
+  .director-content__name {
+    font-size: 22px;
+  }
+  .statistics__number {
+    font-size: 60px;
+  }
+  .statistics-slider__item {
+    width: 387px;
+  }
+}
